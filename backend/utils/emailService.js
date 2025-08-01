@@ -1,13 +1,6 @@
 const nodemailer = require('nodemailer');
 
-/**
- * Send email using nodemailer
- * @param {Object} options - Email options
- * @param {String} options.email - Recipient email
- * @param {String} options.subject - Email subject
- * @param {String} options.message - Email body text
- * @param {String} options.html - Email HTML content (optional)
- */
+
 exports.sendEmail = async (options) => {
   console.log('Sending email with options:', options.email);  
    
