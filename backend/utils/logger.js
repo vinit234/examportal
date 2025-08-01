@@ -1,12 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-/**
- *  
- * @param {String} type - Log type (info, warn, error)
- * @param {String} message - Log message
- * @param {Object} data - Additional data to log
- */
+
 exports.logToFile = (type, message, data = {}) => {
   const dir = path.join(__dirname, '../logs');
   

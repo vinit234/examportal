@@ -2,16 +2,7 @@ const PDFDocument = require('pdfkit');
 const fs = require('fs');
 const path = require('path');
 
-/**
- * Generate a PDF certificate
- * @param {Object} options - Certificate options
- * @param {String} options.userName - User's name
- * @param {String} options.examTitle - Exam title
- * @param {Number} options.score - User's score
- * @param {Number} options.totalMarks - Total possible marks
- * @param {Date} options.date - Certificate issue date
- * @returns {String} - Path to the generated certificate
- */
+
 exports.generateCertificate = async (options,options1,score) => {
    console.log('Generating certificate with options:', options,options1);
   return new Promise((resolve, reject) => {
