@@ -29,11 +29,11 @@ const ExamSchema = new mongoose.Schema({
   },
   startDate: {
     type: Date,
-    // required: [true, 'Please add a start date']
+    
   },
   endDate: {
     type: Date,
-    // required: [true, 'Please add an end date']
+   
   },
   isActive: {
     type: Boolean,
